@@ -90,7 +90,7 @@ function sanitizeHeaders(h: unknown): Record<string, string> {
 Deno.serve(async function (req: Request): Promise<Response> {
   // Fail closed on the placeholder PSK so a fresh deploy without setup
   // can't accidentally serve as an open relay.
-  if (PSK === "CHANGE_ME_TO_A_STRONG_SECRET") {
+  if (PSK === "ab999fdb6ac9702d33a6e39a000bf9aa4589413a56498ef764330fd41be8b449") {
     return Response.json(
       {
         e:
